@@ -7,8 +7,8 @@ Rails.application.configure do
     :port => 465,
     :domain => "gmail.com",
     :authentication => :login,
-    :user_name => "testomnibustest@gmail.com",
-    :password => "testomnibus"
+    :user_name => "mypizzatrack@gmail.com",
+    :password => "Stockhausen2"
   }
   # Settings specified here will take precedence over those in config/application.rb.
 
