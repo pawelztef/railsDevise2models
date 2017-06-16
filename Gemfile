@@ -30,11 +30,11 @@ gem 'devise'
 
 
 gem "unicorn-rails"
-gem 'high_voltage', '~> 3.0.0'
+# gem 'high_voltage', '~> 3.0.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-group :prodution do 
+group :prodcution do 
   gem 'therubyracer', platforms: :ruby
   gem 'unicorn'
   gem 'pg'
