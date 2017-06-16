@@ -1,6 +1,15 @@
 Rails.application.configure do
-  config.action_mailer.delivery_method = :letter_opener
   config.action_mailer.default_url_options = { host: '188.166.152.13', port: 3000  } 
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    :tls => true,
+    :address => "smtp.gmail.com",
+    :port => 587,
+    :domain => "gmail.com",
+    :authentication => :login,
+    :user_name => "testomnibustest@gmail.com",
+    :password => "testomnibus"
+  }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -79,4 +88,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-end
+  end
