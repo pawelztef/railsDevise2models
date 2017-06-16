@@ -26,16 +26,15 @@ gem "twitter-bootstrap-rails"
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'material_icons'
 gem 'simple_form'
+gem 'devise'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 gem "unicorn-rails"
-gem 'high_voltage', '~> 3.0.0'
+# gem 'high_voltage', '~> 3.0.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-group :prodution do 
+group :prodcution do 
   gem 'therubyracer', platforms: :ruby
   gem 'unicorn'
   gem 'pg'
