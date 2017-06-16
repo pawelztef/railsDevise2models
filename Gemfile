@@ -27,6 +27,7 @@ gem 'font-awesome-sass', '~> 4.7.0'
 gem 'material_icons'
 gem 'simple_form'
 gem 'devise'
+gem 'letter_opener'
 
 
 gem "unicorn-rails"
@@ -50,7 +51,6 @@ group :development do
   gem 'pry-rails'
   gem 'pry-byebug' 
   gem 'faker'
-  gem 'letter_opener'
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'mysql2', '>= 0.3.13', '< 0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
