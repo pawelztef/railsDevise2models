@@ -4,11 +4,12 @@ Rails.application.configure do
   ActionMailer::Base.smtp_settings = {
     :tls => true,
     :address => "smtp.gmail.com",
-    :port => 465,
+    :port => 587,
     :domain => "gmail.com",
-    :authentication => :login,
+    :authentication => :plain,
     :user_name => "mypizzatrack@gmail.com",
-    :password => "Stockhausen2"
+    :password => "Stockhausen2",
+    :enable_starttls_auto => true
   }
   # Settings specified here will take precedence over those in config/application.rb.
 
