@@ -10,9 +10,10 @@
 
 
     <%= render "partials/main_nav" %>
-    <%= render "partials/flash_messages" %>
-
-    <%= yield %>
+    <div class="container">
+      <%= render "partials/flash_messages" %>
+      <%= yield %>
+    </div>
 
   </body>
 </html>

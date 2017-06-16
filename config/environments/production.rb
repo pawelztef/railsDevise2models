@@ -1,15 +1,15 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: '188.166.152.13', port: 3000  } 
-  ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = {
-    :tls => true,
-    :address => "smtp.gmail.com",
-    :port => 465,
-    :domain => "gmail.com",
-    :authentication => :plain,
-    :user_name => "mypizzatrack@gmail.com",
-    :password => "Stockhausen2"
-  }
+  # config.action_mailer.default_url_options = { host: '188.166.152.13', port: 3000  } 
+  # ActionMailer::Base.delivery_method = :smtp
+  # ActionMailer::Base.smtp_settings = {
+  #   :tls => true,
+  #   :address => "smtp.gmail.com",
+  #   :port => 465,
+  #   :domain => "gmail.com",
+  #   :authentication => :plain,
+  #   :user_name => "mypizzatrack@gmail.com",
+  #   :password => "Stockhausen2"
+  # }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

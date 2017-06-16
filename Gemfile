@@ -27,7 +27,6 @@ gem 'font-awesome-sass', '~> 4.7.0'
 gem 'material_icons'
 gem 'simple_form'
 gem 'devise'
-gem 'letter_opener'
 
 
 gem "unicorn-rails"
@@ -43,6 +42,7 @@ end
 
 
 group :development do
+  gem 'letter_opener'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   gem 'byebug'
