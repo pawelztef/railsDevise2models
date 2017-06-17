@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  layout 'frontend_layout'
 
   def home
   end
