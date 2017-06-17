@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-
+  devise_for :admins
   devise_for :users
 
   root 'pages#home'
@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'pages/contact'
   get 'pages/about'
   get 'pages/home'
+  get 'backends/dashboard'
 
   resources :users
 
