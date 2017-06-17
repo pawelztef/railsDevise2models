@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  layout 'customer_profile_layout'
   before_action :authenticate_user!
+  layout 'customer_profile_layout'
   def show
     @user = User.find(params[:id])
   end
