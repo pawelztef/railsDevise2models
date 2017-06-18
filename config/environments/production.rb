@@ -1,7 +1,7 @@
 Rails.application.configure do
   config.action_mailer.delivery_method = :letter_opener_web
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 } 
-  # config.action_mailer.default_url_options = { host: '188.166.152.13', port: 3000  } 
+  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 } 
+  config.action_mailer.default_url_options = { host: '188.166.152.13', port: 3000  } 
   # ActionMailer::Base.delivery_method = :smtp
   # ActionMailer::Base.smtp_settings = {
   #   :tls => true,
