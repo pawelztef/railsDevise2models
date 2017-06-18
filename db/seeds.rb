@@ -4,6 +4,7 @@ c.last_name = "Jankowski"
 c.email = "food@food.com"
 c.password = "password"
 c.password_confirmation = "password"
+c.skip_confirmation!
 c.save!
 
 a = Admin.new
@@ -17,4 +18,5 @@ a.address_line1 = "12/2"
 a.address_line2 = "Szkolna"
 a.town = "Bobolice"
 a.code = "88-888"
+a.skip_confirmation!
 a.save!
