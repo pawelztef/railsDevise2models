@@ -8,7 +8,7 @@ Rails.application.configure do
     :port => 587,
     :user_name => "mypizzatrack@gmail.com",
     :password => "Stockhausen2"
-    :authentication => :plain,
+    :authentication => "plain",
     :enable_starttls_auto => true
   }
   # Settings specified here will take precedence over those in config/application.rb.
