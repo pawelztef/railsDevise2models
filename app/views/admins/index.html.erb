@@ -1,5 +1,5 @@
 <div class="col-md-8 col-md-offset-2">
-  <h2>Authorized Users</h2>
+  <h2>Administratorzy</h2>
   <div class="panel panel-default">
     <div class="panel-body">
       <table class="table table-striped">
@@ -15,7 +15,7 @@
             <tr>
               <td> <%= admin.fullname %> </td>
               <td> <%= admin.email %> </td>
-              <td></td>
+              <td> <%= admin_status(admin) %> </td>
             </tr>
           <% end %>
         </tbody>
