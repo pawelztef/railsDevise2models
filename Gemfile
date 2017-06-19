@@ -15,9 +15,11 @@ gem 'font-awesome-sass', '~> 4.7.0'
 gem 'material_icons'
 gem 'simple_form'
 gem 'devise'
+gem 'devise-i18n'
 gem 'letter_opener_web'
 
-gem "unicorn-rails"
+# gem "unicorn-rails"
+gem 'puma'
 
 group :prodcution do 
   gem 'therubyracer', platforms: :ruby
