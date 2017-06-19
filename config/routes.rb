@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
 
   devise_for :admins
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   get 'backends/dashboard'
 
   resources :users
+  resources :admins
 
 
   # The priority is based upon order of creation: first created -> highest priority.

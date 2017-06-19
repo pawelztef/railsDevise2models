@@ -18,5 +18,6 @@ a.address_line1 = "12/2"
 a.address_line2 = "Szkolna"
 a.town = "Bobolice"
 a.code = "88-888"
+a.owner = true
 a.skip_confirmation!
 a.save!

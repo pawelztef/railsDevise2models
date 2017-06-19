@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170617062740) do
+ActiveRecord::Schema.define(version: 20170619130553) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20170617062740) do
     t.string   "address_line2",          limit: 255
     t.string   "town",                   limit: 255
     t.string   "code",                   limit: 255
+    t.boolean  "owner"
   end
 
   add_index "admins", ["confirmation_token"], name: "index_admins_on_confirmation_token", unique: true, using: :btree
