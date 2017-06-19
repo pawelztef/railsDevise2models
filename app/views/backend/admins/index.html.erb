@@ -1,0 +1,38 @@
+<div class="col-md-12">
+  <h2>Administratorzy</h2>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-12">
+          <%= simple_form_for(Admin.new, url: admin_invitation_path, html: {class: 'form-inline' }) do |f| %> 
+            <%= f.input :email, placeholder: 'Email', label: false %> 
+            <%= f.button :submit, 'Wyślij zaproszenie', class: 'btn btn-default' %> 
+          <% end %> 
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <td>Imię i Nazwisko</td>
+                <td>Email</td>
+                <td>Status</td>
+              </tr>
+            </thead>
+            <tbody>
+              <% @admins.each do |admin| %> 
+                <tr>
+                  <td> <%= admin.fullname  %> </td>
+                  <td> <%= admin.email %> </td>
+                  <td> <%= admin_status(admin) %> </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

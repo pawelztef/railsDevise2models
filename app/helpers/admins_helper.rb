@@ -1,6 +1,6 @@
 module AdminsHelper
   def admin_status(admin)
-    if current_admin.owner
+    if admin.owner || admin.confirmed?
       material_icon.done.css_class('text-success')
     else
       'Oczekuje'

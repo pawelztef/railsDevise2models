@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
 
   devise_for :admins
@@ -11,11 +10,13 @@ Rails.application.routes.draw do
   get 'pages/contact'
   get 'pages/about'
   get 'pages/home'
-  get 'backends/dashboard'
 
   resources :users
-  resources :admins
 
+  namespace :backend do
+    resources :dashboards
+    resources :admins
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -16,6 +16,8 @@ gem 'material_icons'
 gem 'simple_form'
 gem 'devise'
 gem 'devise-i18n'
+gem 'devise_invitable'
+
 gem 'letter_opener_web'
 
 # gem "unicorn-rails"
@@ -31,6 +33,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   gem 'byebug'
+  gem 'awesome_print', require: 'ap'
   # gem 'rack-mini-profiler'
   gem 'rack-livereload'
   gem 'pry-rails'
