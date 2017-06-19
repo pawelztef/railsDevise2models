@@ -1,0 +1,44 @@
+pl:
+  simple_form:
+    "yes": 'Tak'
+    "no": 'Nie'
+    required:
+      text: 'obowiązkowe'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Sprawdź błędy poniżej:"
+    labels:
+      defaults:
+        password: 'Hasło'
+        password_confirmation: 'Powtórz hasło'
+        email: 'E-mail.'
+        first_name: 'Imię'
+        last_name: 'Nazwisko'
+        email: 'E-mail'
+        first_name: 'Imię'
+        last_name: 'Nazwisko'
+        phone: 'Telefon'
+        address_line1: 'Nr lokalu'
+        address_line2: 'Ulica'
+        code: 'Kod pocztowy'
+        town: 'Miasto'
+      user:
+        new:
+        edit:
+      admin:
+        new:
+        edit:
+
+    hints:
+      defaults:
+        username: 'Nazwa użytkownika.'
+        # password: 'No special characters, please.'
+    include_blanks:
+      defaults:
+        age: 'Rather not say'
+    prompts:
+      defaults:
+        age: 'Select your age'
