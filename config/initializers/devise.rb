@@ -7,7 +7,13 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'f0d553ccb5bfe00a9da180b380b121c65660ccb0dbcc2c95d23827cfe7313e363d76a5927e75604b838e08440122fe5069655ee7efa7da29e9583f16c203e2a1'
-
+  #
+  # ==> Configuration for :invitable
+  # The period the generated invitation token is valid, after
+  # this period, the invited resource won't be able to accept the invitation.
+  # When invite_for is 0 (the default), the invitation won't expire.
+  config.invite_for = 30.seconds
+  #
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
