@@ -1,0 +1,31 @@
+pl:
+  devise:
+    failure:
+      invited: "You have a pending invitation, accept it to finish creating your account."
+    invitations:
+      send_instructions: "Wysłano e-mail z zaproszeniem na adres %{email}."
+      invitation_token_invalid: "Podany token zaproszenia jest nieważny!" 
+      updated: "Twoje konto zostało utworzone z powodzeniem. Jesteś zalogowany"
+      updated_not_active: "Twoje hasło zostało zapisane z powodzeniem."
+      no_invitations_remaining: "Brak zaproszen"
+      invitation_removed: "Twoje zaproszenie zostało usunięte." 
+      new:
+        header: "Wyślij zaproszenie"
+        submit_button: "Wyślij zaproszenie"
+      edit:
+        header: "Zapisz hasło"
+        submit_button: "Zapisz hasło"
+    mailer:
+      invitation_instructions:
+        subject: "Instrukcje zaproszenia"
+        hello: "Witaj %{email}"
+        someone_invited_you: "Zostałeś zaproszony do %{url}, możesz zaakceptować zaproszenie klikając na poniższy link."
+        accept: "Akceptuj zaproszenie"
+        accept_until: "To zaproszenie będzie ważne do %{due_date}."
+        ignore: "Jeśli nie chcesz zaakceptować zaproszenia, zignoruj ten e-mail.<br />\nTwoje konto nie zostanie utworzone, dopóki nie zarejestrujesz sie przez powyższy link." 
+  time:
+    formats:
+      devise:
+        mailer:
+          invitation_instructions:
+            accept_until_format: "%d %m %Y"

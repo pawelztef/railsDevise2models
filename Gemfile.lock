@@ -39,6 +39,7 @@ GEM
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (6.0.4)
+    awesome_print (1.8.0)
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -55,6 +56,9 @@ GEM
       responders
       warden (~> 1.2.3)
     devise-i18n (1.1.2)
+    devise_invitable (1.7.2)
+      actionmailer (>= 4.1.0)
+      devise (>= 4.0.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -244,9 +248,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   byebug
   devise
   devise-i18n
+  devise_invitable
   faker
   font-awesome-sass (~> 4.7.0)
   guard-livereload (~> 2.5)

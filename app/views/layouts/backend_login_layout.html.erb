@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FoodtrackV10</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <%= render 'partials/backend_nav' %> 
+    <div class="container">
+      <div class="row">
+        <div class="well">backend-login-layout</div>
+        <%= render "partials/flash_messages" %>
+        <%= yield %>
+      </div>
+  </body>
+</html>

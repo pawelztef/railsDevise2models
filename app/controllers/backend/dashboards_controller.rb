@@ -1,10 +1,8 @@
-class BackendsController < ApplicationController
+class Backend::DashboardsController < ApplicationController
   before_action :authenticate_admin!
   layout 'backend_layout'
 
-  def dashboard 
+  def index
     @welcome_msg = "Welcome to backend"
   end
-
-
 end
