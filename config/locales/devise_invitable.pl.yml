@@ -3,29 +3,29 @@ pl:
     failure:
       invited: "You have a pending invitation, accept it to finish creating your account."
     invitations:
-      send_instructions: "An invitation email has been sent to %{email}."
-      invitation_token_invalid: "The invitation token provided is not valid!"
-      updated: "Your password was set successfully. You are now signed in."
-      updated_not_active: "Your password was set successfully."
-      no_invitations_remaining: "No invitations remaining"
-      invitation_removed: "Your invitation was removed."
+      send_instructions: "Wysłano e-mail z zaproszeniem na adres %{email}."
+      invitation_token_invalid: "Podany token zaproszenia jest nieważny!" 
+      updated: "Twoje konto zostało utworzone z powodzeniem. Jesteś zalogowany"
+      updated_not_active: "Twoje hasło zostało zapisane z powodzeniem."
+      no_invitations_remaining: "Brak zaproszen"
+      invitation_removed: "Twoje zaproszenie zostało usunięte." 
       new:
-        header: "Send invitation"
-        submit_button: "Send an invitation"
+        header: "Wyślij zaproszenie"
+        submit_button: "Wyślij zaproszenie"
       edit:
-        header: "Set your password"
-        submit_button: "Set my password"
+        header: "Zapisz hasło"
+        submit_button: "Zapisz hasło"
     mailer:
       invitation_instructions:
-        subject: "Invitation instructions"
-        hello: "Hello %{email}"
-        someone_invited_you: "Someone has invited you to %{url}, you can accept it through the link below."
-        accept: "Accept invitation"
-        accept_until: "This invitation will be due in %{due_date}."
-        ignore: "If you don't want to accept the invitation, please ignore this email.<br />\nYour account won't be created until you access the link above and set your password."
+        subject: "Instrukcje zaproszenia"
+        hello: "Witaj %{email}"
+        someone_invited_you: "Zostałeś zaproszony do %{url}, możesz zaakceptować zaproszenie klikając na poniższy link."
+        accept: "Akceptuj zaproszenie"
+        accept_until: "To zaproszenie będzie ważne do %{due_date}."
+        ignore: "Jeśli nie chcesz zaakceptować zaproszenia, zignoruj ten e-mail.<br />\nTwoje konto nie zostanie utworzone, dopóki nie zarejestrujesz sie przez powyższy link." 
   time:
     formats:
       devise:
         mailer:
           invitation_instructions:
-            accept_until_format: "%B %d, %Y %I:%M %p"
+            accept_until_format: "%d %m %Y"
