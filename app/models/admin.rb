@@ -18,6 +18,7 @@ class Admin < ActiveRecord::Base
   validates :address_line2, presence: true
   validates :code, presence: true
   validates :town, presence: true
+  validates :email, presence: true
 
 
 

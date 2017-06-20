@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-md-12">
           <%= simple_form_for(Admin.new, url: admin_invitation_path, html: {class: 'form-inline' }) do |f| %> 
-            <%= f.input :email, placeholder: 'Email', label: false %> 
+            <%= f.input :email, required: true, error: 'Email is mandatory', placeholder: 'Email', label: false %> 
             <%= f.button :submit, 'Wyślij zaproszenie', class: 'btn btn-default' %> 
           <% end %> 
         </div>
