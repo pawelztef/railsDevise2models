@@ -11,11 +11,6 @@
     <%= render 'partials/backend_nav' %> 
     <div class="container">
       <div class="row">
-        <div class="col-lg-9">
-      <div class="well">backend-layout</div>
-      <%= render "partials/flash_messages" %>
-          <%= yield %>
-        </div>
         <div class="col-lg-3">
           <div class="well sidebar-nav">
             <h3>Sidebar</h3>
@@ -25,7 +20,12 @@
               <li><%= link_to "Link3", "/path3"  %></li>
             </ul>
           </div><!--/.well -->
-        </div><!--/span-->
+        </div>
+        <div class="col-lg-9">
+          <div class="well">backend-layout</div>
+          <%= render "partials/flash_messages" %>
+          <%= yield %>
+        </div>
       </div><!--/row-->
 
   </body>
